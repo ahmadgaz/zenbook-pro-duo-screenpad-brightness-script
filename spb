@@ -1,0 +1,18 @@
+#!/bin/sh
+
+case "$1" in
+0) echo '\_SB.ATKD.WMNB 0x0 0x53564544 b3200050001000000' | sudo tee /proc/acpi/call ;;
+1) echo '\_SB.ATKD.WMNB 0x0 0x53564544 b320005001B000000' | sudo tee /proc/acpi/call ;;
+2) echo '\_SB.ATKD.WMNB 0x0 0x53564544 b320005003B000000' | sudo tee /proc/acpi/call ;;
+3) echo '\_SB.ATKD.WMNB 0x0 0x53564544 b3200050054000000' | sudo tee /proc/acpi/call ;;
+4) echo '\_SB.ATKD.WMNB 0x0 0x53564544 b3200050074000000' | sudo tee /proc/acpi/call ;;
+5) echo '\_SB.ATKD.WMNB 0x0 0x53564544 b320005008D000000' | sudo tee /proc/acpi/call ;;
+6) echo '\_SB.ATKD.WMNB 0x0 0x53564544 b32000500AD000000' | sudo tee /proc/acpi/call ;;
+7) echo '\_SB.ATKD.WMNB 0x0 0x53564544 b32000500C6000000' | sudo tee /proc/acpi/call ;;
+8) echo '\_SB.ATKD.WMNB 0x0 0x53564544 b32000500E6000000' | sudo tee /proc/acpi/call ;;
+9) echo '\_SB.ATKD.WMNB 0x0 0x53564544 b32000500FF000000' | sudo tee /proc/acpi/call ;;
+*)
+   echo 'Usage:'
+   echo 'spb N       Turn ScreenPad on and set brightness (N = 0...9)'
+;;
+esac
