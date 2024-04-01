@@ -1,0 +1,1 @@
+Check [this guide](https://area-51.blog/2023/07/01/linux-on-the-asus-zenbook-duo-pro-14/) out for setting your ASUS up with Linux. Also join the [Linux on ASUS ROG](https://discord.gg/TbJyEK2GE3) discord.
